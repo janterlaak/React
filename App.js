@@ -50,7 +50,9 @@ handleChange (key,event) {
         this.setState({contact: updatedContact});
       };
 
-
+// Solidity interface code here!!!
+        
+        
 render () {
 
 
