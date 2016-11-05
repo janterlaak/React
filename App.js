@@ -29,6 +29,7 @@ var  pContract = web3.eth.contract(pContractABI).at(pContractAddress)
 class App extends Component {
   constructor(props) {
    super(props);
+                //contact ;key       
    this.state = {contact: {cartType: "Cafee",
                           numberOfpoints: "" + " 12 free caffee",
                           maxPoints: "Setting max :12",
@@ -44,6 +45,7 @@ class App extends Component {
 
 handleChange (key,event) {
         console.log(key,event.target.value);
+        //use immutability-helper to update the array on key event
         const updatedContact = update(this.state.contact, {[key] : {$set: event.target.value}});
         this.setState({contact: updatedContact});
       };
