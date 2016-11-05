@@ -28,10 +28,10 @@ class App extends Component {
   constructor(props) {
    super(props);
    this.state = {contact: {cartType: "Cafee",
-                          numberOfpoints: "" + " Bij punten 12 gratis koffie",
+                          numberOfpoints: "" + " 12 free caffee",
                           maxPoints: "Setting max :12",
                           birdDay: "",
-                          firstName: "Jan"
+                          firstName: "Edgar"
                         }
 
 
