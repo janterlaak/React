@@ -18,9 +18,10 @@ else
 
 // work in progress first try to build a UI for ethereum smart contracts.
 // It uses inputfields from the NPM react-bootstrap pakkage.
+// Next step: build a smart contract with get, put functions
 
-var  pContractABI = [{"constant":true,"inputs":[],"name":"getPeople","outputs":[{"name":"","type":"bytes32[]"},{"name":"","type":"bytes32[]"},{"name":"","type":"uint256[]"}],"type":"function"},{"constant":false,"inputs":[{"name":"_firstName","type":"bytes32"},{"name":"_lastName","type":"bytes32"},{"name":"_age","type":"uint256"}],"name":"addPerson","outputs":[{"name":"success","type":"bool"}],"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"people","outputs":[{"name":"firstName","type":"bytes32"},{"name":"lastName","type":"bytes32"},{"name":"age","type":"uint256"}],"type":"function"}]
-var  pContractAddress = '0x3ef2a593409e274aa12e61510059bac9b3ca3483'
+var  pContractABI = [{" put your ABI string here"}]
+var  pContractAddress = '0x....put your addressstring'
 var  pContract = web3.eth.contract(pContractABI).at(pContractAddress)
 
 
