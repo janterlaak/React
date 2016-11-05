@@ -52,7 +52,7 @@ render () {
 
  return (
      <div>
-       <PageHeader>Card <small>Welkom: {this.state.contact.firstName}, dit is je persoonlijke account van de blockchain Card contract </small></PageHeader>
+       <PageHeader>Card <small>Welkom: {this.state.contact.firstName}, this is your blockchain Card contract </small></PageHeader>
          <h2>Datum:  {new Date().toLocaleDateString()}</h2>
      <form>
        <Well>
