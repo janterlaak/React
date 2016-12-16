@@ -17,8 +17,9 @@ else
    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
 // work in progress first try to build a UI for ethereum smart contracts.
+// Work to do is to break it down in components.
 // It uses inputfields from the NPM react-bootstrap pakkage.
-// Next step: build a smart contract with get, put functions
+// Next step: build a smart contract. Use the WEB3 interface to call solidity fuctions and set state
 
 var  pContractABI = [{" put your ABI string here"}]
 var  pContractAddress = '0x....put your addressstring'
@@ -45,7 +46,8 @@ class App extends Component {
 
 handleChange (key,event) {
         console.log(key,event.target.value);
-        //use immutability-helper to update the array on key event
+        //use immutability-helper to update the array on key event. Use of the helper is great on all sorts of objects.
+        //By using a state change with the helper we get a automatic re-render of the DOM
         const updatedContact = update(this.state.contact, {[key] : {$set: event.target.value}});
         this.setState({contact: updatedContact});
       };
